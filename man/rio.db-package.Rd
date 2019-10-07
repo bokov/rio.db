@@ -12,7 +12,7 @@ if (require("rio")) {
   export(mtcars, "example.sqlite", table = "mtcars")
 
   # import from a SQLite database
-  import("example.sqlite", table = "mtcars")
+  import("example.sqlite", which = "mtcars")
   
   unlink("example.sqlite")
 }
